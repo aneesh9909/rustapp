@@ -1,4 +1,4 @@
-Simple API created in Rust using Rocket for HTTP endpoints and routing and sqlx as database driver.
+Simple API created in Rust using Rocket for HTTP endpoints and routing and sqlx as database driver. (Please use master branch)
 Database used is PostgreSQL.
 
 The application is dockerized and the docker-compose file is included in the root directory.
