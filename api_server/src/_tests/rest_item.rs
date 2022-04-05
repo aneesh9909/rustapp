@@ -39,7 +39,6 @@ async fn rest_get_items_list_count_test() {
 
     let items: Vec<Item> = data.unwrap();
 
-    // -- CHECK - todos
     assert_eq!(3, items.len(), "number of items");
     assert_eq!(100, items[2].id);
     assert_eq!("pizza", items[2].name);

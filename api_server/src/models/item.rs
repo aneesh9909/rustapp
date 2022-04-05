@@ -10,6 +10,7 @@ pub struct Item {
 pub struct ItemAccessController;
 
 impl ItemAccessController {
+    //Returns all items in DB
     pub async fn get_all_items(db : Db) -> Result<Vec<Item> , sqlx::Error>{
         let sql = "SELECT id,name,time_to_cook from item ORDER BY id desc";
         let query = sqlx::query_as(&sql);
